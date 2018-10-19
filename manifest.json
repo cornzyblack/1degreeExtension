@@ -1,7 +1,7 @@
 {
-  "name": "oneDegree Helper",
+  "name": "oneDegree Volunteer Helper",
   "version": "1.0",
-  "description": "Opens the Organization's page on OneDegree and its Website",
+  "description": "Opens the Organization's link or Opportunity link on OneDegree and opens the organization's Website if any.",
   "bacground": {
       "scripts": ["background.js"],
       "persistent": false
