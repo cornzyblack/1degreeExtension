@@ -26,7 +26,7 @@ function oppOpen(oppId){
 	}
 }
 
-const action_to_take = {"opportunity": oppId, "organization": orgId};
+const action_to_take = {"opportunity": oppOpen, "organization": orgOpen};
 
 function onClickHandler(clickedItem){
 	action_to_take[clickedItem.menuItemId](clickedItem.selectionText);
