@@ -1,19 +1,22 @@
 {
   "name": "oneDegree Volunteer Helper",
+  "manifest_version": 2,
   "version": "1.0",
   "description": "Opens the Organization's link or Opportunity link on OneDegree and opens the organization's Website if any.",
-  "bacground": {
-      "scripts": ["background.js"],
-      "persistent": false
-  },
-  "page_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-          "128": "images/onedegree.png"
-      }
-  },
+
   "icons": {
-    "128": "images/onedegree.png"
+    "128": "images/onedegree.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
   },
-  "manifest_version": 2
+  
+  "background":{
+    "scripts":["eventPage.js"],
+    "persistent": true
+  },
+
+  "permissions":[
+    "storage",
+    "contextMenus"
+  ]
 }
